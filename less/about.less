@@ -1,0 +1,66 @@
+div.a-title {
+  color: white;
+  text-align: center;
+  font-family: @font;
+  font-size: 3rem;
+  border-bottom: 2px solid white;
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+// the portrait section
+section.frame {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+
+  //   the individual portraits
+  div.portrait {
+    border: 1px solid orange;
+    border-radius: 1rem 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem 1rem;
+    width: 30%;
+    background-color: lighten(@background-color, 15%);
+
+    img.head-shot {
+      height: 15rem;
+      width: 15rem;
+      border-radius: 45px 45px 45px 45px;
+    }
+    h3.name {
+      color: white;
+      font-family: @font;
+      font-size: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+    h3.title {
+      color: white;
+      font-family: @font;
+      font-size: 2rem;
+      padding-top: 0.5rem;
+    }
+    img.git-link {
+      background-color: yellow;
+      border-radius: 20px 20px 20px 20px;
+      margin: 1rem;
+      padding: 0.5rem;
+      height: 3rem;
+      width: 3rem;
+    }
+    img.lambda {
+      background-color: rgb(255, 255, 255);
+      border-radius: 20px 20px 20px 20px;
+      margin: 1rem;
+      padding: 0.5rem;
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+}
