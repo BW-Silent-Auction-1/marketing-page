@@ -16,6 +16,10 @@ section.frame {
   flex-wrap: wrap;
   align-items: center;
 
+  @media @phone {
+    padding: 2rem;
+  }
+
   //   the individual portraits
   div.portrait {
     border: 1px solid orange;
@@ -25,13 +29,23 @@ section.frame {
     flex-wrap: wrap;
     align-items: center;
     margin: 1rem 1rem;
-    width: 30%;
+    width: 20rem;
     background-color: lighten(@background-color, 15%);
+
+    @media @desktop {
+      margin: 0 auto;
+      width: 20rem;
+    }
 
     img.head-shot {
       height: 15rem;
       width: 15rem;
       border-radius: 45px 45px 45px 45px;
+
+      @media @phone {
+        height: 10rem;
+        width: 10rem;
+      }
     }
     h3.name {
       color: white;

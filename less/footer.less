@@ -1,4 +1,8 @@
 footer {
+  @media @phone {
+    padding: 2rem;
+    width: 100%;
+  }
   button {
     background-color: @secondary-color;
     border: none;
@@ -10,6 +14,12 @@ footer {
     font-family: @font;
     font-size: 1.3rem;
     color: @font-color;
+
+    @media @phone {
+      width: 100%;
+      // margin: 0 auto;
+      text-align: center;
+    }
   }
 
   div.social-media {

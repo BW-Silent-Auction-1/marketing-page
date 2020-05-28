@@ -1,4 +1,3 @@
-html,
 body,
 div,
 span,
@@ -125,6 +124,11 @@ table {
 html {
   background-color: #0d0d0d;
 }
+@media (max-width: 500px) {
+  html {
+    background-color: black;
+  }
+}
 .nav-design {
   display: flex;
   justify-content: space-evenly;
@@ -142,10 +146,22 @@ html {
 header.top-nav {
   background-color: #0d0d0d;
 }
+@media (max-width: 500px) {
+  header.top-nav {
+    display: flex;
+    background-color: black;
+  }
+}
 header.top-nav nav {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
+}
+@media (max-width: 500px) {
+  header.top-nav nav {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 header.top-nav nav a {
   color: #ffffff;
@@ -163,31 +179,52 @@ header.top-nav nav a.active {
 section.billboard-img {
   background-color: #0d0d0d;
 }
+@media (max-width: 500px) {
+  section.billboard-img {
+    width: 100%;
+  }
+}
 section.billboard-img div.grabber {
   border: 1px solid #ff581a;
   border-bottom: 7px solid #ad2f00;
   border-right: 7px solid #b33000;
   background-color: black;
   border-radius: 6px 6px 6px 6px;
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   text-align: center;
-  height: 30rem;
+  height: 40%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 800px) {
+  section.billboard-img div.grabber {
+    flex-direction: column;
+    height: auto;
+  }
+}
+@media (max-width: 500px) {
+  section.billboard-img div.grabber {
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    align-items: center;
+  }
 }
 section.billboard-img div.grabber img {
   width: 25rem;
   height: auto;
   padding-left: 3rem;
 }
-section.billboard-img div.grabber div.text {
-  padding: 2rem;
+@media (max-width: 800px) {
+  section.billboard-img div.grabber img {
+    margin: 0 auto;
+  }
 }
 section.billboard-img div.grabber div.text H1 {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   margin: 2.5rem 0;
   padding-bottom: 1rem;
@@ -196,20 +233,44 @@ section.billboard-img div.grabber div.text H1 {
 section.billboard-img div.grabber div.text p {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   align-self: center;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  section.billboard-img div.grabber div.text {
+    width: 100%;
+    border: none;
+    margin: 0 auto;
+    align-items: center;
+    padding: 2rem;
+  }
 }
 section.billboard-img div.grabber div.icons {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 2.5rem;
+  padding-top: 2.4rem;
 }
 section.billboard-img div.grabber div.icons div.title i {
   font-size: 3rem;
   background-color: orangered;
   padding: 1rem;
   border-radius: 50px 50px 50px 50px;
+}
+@media (max-width: 1060px) {
+  section.billboard-img div.grabber div.icons div.title i {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 800px) {
+  section.billboard-img div.grabber div.icons div.title i {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  section.billboard-img div.grabber div.icons div.title i {
+    font-size: 1.5rem;
+  }
 }
 section.billboard-img div.grabber div.icons div.title i.fa-tools {
   background-color: #308ffc;
@@ -249,6 +310,11 @@ section.frame {
   flex-wrap: wrap;
   align-items: center;
 }
+@media (max-width: 500px) {
+  section.frame {
+    padding: 2rem;
+  }
+}
 section.frame div.portrait {
   border: 1px solid orange;
   border-radius: 1rem 1rem 1rem 1rem;
@@ -257,13 +323,25 @@ section.frame div.portrait {
   flex-wrap: wrap;
   align-items: center;
   margin: 1rem 1rem;
-  width: 30%;
+  width: 20rem;
   background-color: #262626;
+}
+@media (max-width: 1060px) {
+  section.frame div.portrait {
+    margin: 0 auto;
+    width: 20rem;
+  }
 }
 section.frame div.portrait img.head-shot {
   height: 15rem;
   width: 15rem;
   border-radius: 45px 45px 45px 45px;
+}
+@media (max-width: 500px) {
+  section.frame div.portrait img.head-shot {
+    height: 10rem;
+    width: 10rem;
+  }
 }
 section.frame div.portrait h3.name {
   color: white;
@@ -294,6 +372,12 @@ section.frame div.portrait img.lambda {
   height: 3rem;
   width: 3rem;
 }
+@media (max-width: 500px) {
+  footer {
+    padding: 2rem;
+    width: 100%;
+  }
+}
 footer button {
   background-color: orangered;
   border: none;
@@ -305,6 +389,12 @@ footer button {
   font-family: "Titillium Web", sans-serif;
   font-size: 1.3rem;
   color: #ffffff;
+}
+@media (max-width: 500px) {
+  footer button {
+    width: 100%;
+    text-align: center;
+  }
 }
 footer div.social-media {
   width: 80%;

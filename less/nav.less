@@ -1,8 +1,17 @@
 // THE NAV BAR
 header.top-nav {
   .background;
+  @media @phone {
+    display: flex;
+    background-color: black;
+  }
   nav {
     .nav-design;
+
+    @media @phone {
+      flex-direction: column;
+      margin: 0;
+    }
 
     a {
       .a-design;
