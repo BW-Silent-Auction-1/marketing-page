@@ -43,7 +43,8 @@ section.billboard-img {
       }
     }
     div.text {
-      // padding: 2rem;
+      padding-top: 2rem;
+      width: 800px;
       H1 {
         color: @font-color;
         font-family: @main-font;
@@ -61,8 +62,13 @@ section.billboard-img {
         margin: 0 auto;
       }
 
-      @media @phone {
+      @media @tablet {
         width: 100%;
+        text-align: center;
+      }
+
+      @media @phone {
+        width: 90%;
         border: none;
         margin: 0 auto;
         align-items: center;
@@ -75,6 +81,10 @@ section.billboard-img {
       display: flex;
       justify-content: space-evenly;
       padding-top: 2.4rem;
+
+      @media @tablet {
+        padding-bottom: 0.5rem;
+      }
 
       div.title {
         i {

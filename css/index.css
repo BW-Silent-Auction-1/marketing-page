@@ -221,6 +221,10 @@ section.billboard-img div.grabber img {
     margin: 0 auto;
   }
 }
+section.billboard-img div.grabber div.text {
+  padding-top: 2rem;
+  width: 800px;
+}
 section.billboard-img div.grabber div.text H1 {
   color: #ffffff;
   font-family: "Oswald", sans-serif;
@@ -237,9 +241,15 @@ section.billboard-img div.grabber div.text p {
   align-self: center;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   section.billboard-img div.grabber div.text {
     width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  section.billboard-img div.grabber div.text {
+    width: 90%;
     border: none;
     margin: 0 auto;
     align-items: center;
@@ -250,6 +260,11 @@ section.billboard-img div.grabber div.icons {
   display: flex;
   justify-content: space-evenly;
   padding-top: 2.4rem;
+}
+@media (max-width: 800px) {
+  section.billboard-img div.grabber div.icons {
+    padding-bottom: 0.5rem;
+  }
 }
 section.billboard-img div.grabber div.icons div.title i {
   font-size: 3rem;
@@ -375,7 +390,7 @@ section.frame div.portrait img.lambda {
 @media (max-width: 500px) {
   footer {
     padding: 2rem;
-    width: 100%;
+    width: 90%;
   }
 }
 footer button {
@@ -392,7 +407,7 @@ footer button {
 }
 @media (max-width: 500px) {
   footer button {
-    width: 100%;
+    width: 90%;
     text-align: center;
   }
 }
