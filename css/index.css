@@ -219,9 +219,9 @@ section.billboard-img div.grabber {
   }
 }
 section.billboard-img div.grabber img {
-  width: 25rem;
+  width: 23rem;
   height: auto;
-  padding-left: 3rem;
+  padding-left: 2.5rem;
 }
 @media (max-width: 800px) {
   section.billboard-img div.grabber img {
@@ -350,8 +350,13 @@ section.frame div.portrait {
 }
 @media (max-width: 1060px) {
   section.frame div.portrait {
-    margin: 0 auto;
+    margin: 1 auto;
     width: 20rem;
+  }
+}
+@media (max-width: 800px) {
+  section.frame div.portrait {
+    margin: 2rem auto;
   }
 }
 @media (max-width: 500px) {
@@ -411,7 +416,10 @@ section.frame div.portrait img.lambda:hover {
     width: 90%;
   }
 }
-footer button {
+footer a {
+  text-decoration: none;
+}
+footer a button {
   background-color: orangered;
   border: none;
   display: block;
@@ -424,7 +432,7 @@ footer button {
   color: #ffffff;
 }
 @media (max-width: 500px) {
-  footer button {
+  footer a button {
     width: 90%;
     text-align: center;
   }
