@@ -354,6 +354,11 @@ section.frame div.portrait {
     width: 20rem;
   }
 }
+@media (max-width: 500px) {
+  section.frame div.portrait {
+    margin: 1rem auto;
+  }
+}
 section.frame div.portrait img.head-shot {
   height: 15rem;
   width: 15rem;
